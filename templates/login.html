@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - PrepPilot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+}
+
+/* SPLIT SCREEN */
+.container-main {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.left-panel {
+    flex: 1;
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-panel h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.left-panel p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* RIGHT SIDE */
+.right-panel {
+    flex: 1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN CARD */
+.login-card {
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<!-- splits the page -->
+<div class="container-main">
+
+<!-- LEFT SIDE -->
+<div class="left-panel">
+    <h1>PrepPilot 🚀</h1>
+
+    <p>
+        Your personal job preparation tracker.<br><br>
+
+        • Extract skills from job descriptions<br>
+        • Track your progress with visual insights<br>
+        • Match your resume with job requirements<br>
+        • Stay organized and interview-ready<br><br>
+
+        Build smarter. Prepare faster.
+    </p>
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="right-panel">
+
+<div class="login-card">
+
+    <h3 class="text-center mb-2">Welcome Back 👋</h3>
+    <p class="text-center text-muted">Login to continue</p>
+
+    <form action="/login" method="post">
+
+        <input class="form-control mb-3" name="username" placeholder="Username">
+
+        <input class="form-control mb-3" type="password" name="password" placeholder="Password">
+
+        <button class="btn btn-primary w-100">Sign In</button>
+
+    </form>
+
+    <div class="text-center mt-3">
+        <small>New here?</small><br>
+        <a href="/register">Create an account</a>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
